@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F3F4F6" android:padding="16dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/rounded_background" android:padding="16dp" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp">
+            <ImageButton android:id="@+id/backButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:background="?attr/selectableItemBackgroundBorderless" android:src="@drawable/ic_backarrow" android:layout_alignParentStart="true" app:tint="#6B7280"/>
+        </RelativeLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Register" android:textSize="24sp" android:textColor="#065F46" android:fontFamily="sans-serif-medium" android:gravity="center" android:layout_marginBottom="8dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Create your new account" android:textSize="14sp" android:textColor="#6B7280" android:gravity="center" android:layout_marginBottom="24dp"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="8dp" android:layout_marginBottom="16dp" android:background="@drawable/rounded_background">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_email" android:layout_marginEnd="8dp" app:tint="#6B7280"/>
+                <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/emailTxt" android:hint="johnsmith@mail.com" android:background="@android:color/transparent" android:padding="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="8dp" android:layout_marginBottom="16dp" android:background="@drawable/rounded_background">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock" android:layout_marginEnd="8dp" app:tint="#6B7280"/>
+                <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Password" android:id="@+id/passwordTxt" android:background="@android:color/transparent" android:padding="0dp" android:inputType="textPassword"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="8dp" android:layout_marginBottom="16dp" android:background="@drawable/rounded_background">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_lock" android:layout_marginEnd="8dp" app:tint="#6B7280"/>
+                <EditText android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Confirm Password" android:id="@+id/confirmPasswordTxt" android:background="@android:color/transparent" android:padding="0dp" android:inputType="textPassword"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="By signing you agree to our Terms of use and privacy notice" android:textSize="12sp" android:textColor="#6B7280" android:gravity="center" android:layout_marginBottom="24dp"/>
+        <Button android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sign Up" android:backgroundTint="#065F46" android:id="@+id/signUpBtn" android:textColor="#FFFFFF" android:layout_marginBottom="24dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Already have an account? Sign in" android:textSize="12sp" android:textColor="#6B7280" android:id="@+id/signTxt" android:gravity="center"/>
+    </LinearLayout>
+</RelativeLayout>

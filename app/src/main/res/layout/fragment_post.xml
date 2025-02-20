@@ -1,0 +1,369 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F4F6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="16dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_backarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post Job"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Job Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Title"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile App"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Application email/URL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Application email/URL"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="qrizwan78612@gmail.com"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Location (optional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location (optional)"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g 34 Wigmore Street, London"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Job Region (optional) -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job Region (optional)"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/job_region_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Remote Position (optional) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remote Position (optional)"
+                android:textColor="#4A5568"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Job type -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Job type"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingBottom="4dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:id="@+id/job_type_spinner"
+            android:padding="12dp"
+            android:textColor="#4A5568"
+            android:textSize="14sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Job category, Description, Experience, and Featured Image -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/job_category_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job category"
+                android:textColor="#374151"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/job_category_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Description"
+                android:textColor="#374151"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background1"
+                android:hint="Type."
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/experience_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Experience (optional)"
+                android:textColor="#374151"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/experience_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="1+ Years Experience"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/featured_image_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Featured Image (optional)"
+                android:textColor="#374151"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/dashed_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <Button
+                    android:id="@+id/upload_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#E5E7EB"
+                    android:drawableLeft="@drawable/ic_upload"
+                    android:padding="8dp"
+                    android:text="Upload Files"
+                    android:textColor="#374151"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/drag_drop_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="Drag and drop any image"
+                    android:textColor="#6B7280" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Company Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_margin="@dimen/_4sdp">
+
+            <TextView
+                android:id="@+id/tvCompanyDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Details"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/tvCompanyName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company name"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#4A4A4A"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etCompanyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter the name of the company"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="#4A4A4A"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvTagline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tagline (optional)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#4A4A4A"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etTagline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Briefly describe your company"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="#4A4A4A"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#4A4A4A"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="#4A4A4A"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvWebsite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Website (optional)"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#4A4A4A"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etWebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="http://"
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textColor="#4A4A4A"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+
+        <!-- Next Button -->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:backgroundTint="#EF4444"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:drawableEnd="@drawable/right_arrow"
+            android:layout_gravity="end" />
+    </LinearLayout>
+</ScrollView>
